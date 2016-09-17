@@ -277,6 +277,7 @@
     'Spieler Handler
 
     Sub PlayerOne()
+        Siegercheck()
         Label3.Text = Player1Name + " ist dran!"
         MessageBox.Show(Player1Name + " ist dran!")
         Player1Check = "True"
@@ -284,6 +285,7 @@
         Label4.Text = "Würfe: " + Player1Wuerfe
     End Sub
     Sub PlayerTwo()
+        Siegercheck()
         Label3.Text = Player2Name + " ist dran!"
         MessageBox.Show(Player2Name + " ist dran!")
         Player2Check = "True"
@@ -291,6 +293,7 @@
         Label4.Text = "Würfe: " + Player2Wuerfe
     End Sub
     Sub PlayerThree()
+        Siegercheck()
         Label3.Text = Player3Name + " ist dran!"
         MessageBox.Show(Player3Name + " ist dran!")
         Player3Check = "True"
@@ -298,6 +301,7 @@
         Label4.Text = "Würfe: " + Player3Wuerfe
     End Sub
     Sub PlayerFour()
+        Siegercheck()
         Label3.Text = Player4Name + " ist dran!"
         MessageBox.Show(Player4Name + " ist dran!")
         Player4Check = "True"
@@ -990,6 +994,7 @@
     Sub WurfcheckPlayer1()
         Do
             Player1Wuerfe = Player1Wuerfe - 1
+            Siegercheck()
             Player1Check = "True"
             If Player1Wuerfe > 0 Then
                 Label4.Text = "Würfe: " + Player1Wuerfe
@@ -1003,6 +1008,7 @@
     Sub WurfcheckPlayer2()
         Do
             Player2Wuerfe = Player2Wuerfe - 1
+            Siegercheck()
             Player2Check = "True"
             If Player2Wuerfe > 0 Then
                 Label4.Text = "Würfe: " + Player2Wuerfe
@@ -1016,6 +1022,7 @@
     Sub WurfcheckPlayer3()
         Do
             Player3Wuerfe = Player3Wuerfe - 1
+            Siegercheck()
             Player3Check = "True"
             If Player3Wuerfe > 0 Then
                 Label4.Text = "Würfe: " + Player3Wuerfe
@@ -1028,8 +1035,8 @@
     End Sub
     Sub WurfcheckPlayer4()
         Do
-            Label4.Text = "Würfe: " + Player4Wuerfe
             Player4Wuerfe = Player4Wuerfe - 1
+            Siegercheck()
             Player4Check = "True"
             If Player4Wuerfe > 0 Then
                 Label4.Text = "Würfe: " + Player3Wuerfe
@@ -1039,6 +1046,103 @@
         Label4.Text = "Würfe: " + Player3Wuerfe
         Player4Check = "False"
         CheckNextPlayer()
+    End Sub
+    'Siegercheck
+    Sub Siegercheck()
+        If Player1Score <= 0 Then
+            MessageBox.Show(Player1Name + " hat gewonnen!")
+            ResetGame()
+        ElseIf Player2Score <= 0 Then
+            MessageBox.Show(Player2Name + " hat gewonnen!")
+            ResetGame()
+        ElseIf Player3Score <= 0 Then
+            MessageBox.Show(Player3Name + " hat gewonnen!")
+            ResetGame()
+        ElseIf Player4Score <= 0 Then
+            MessageBox.Show(Player4Name + " hat gewonnen!")
+            ResetGame()
+        End If
+    End Sub
+    'ResetGame
+    Sub ResetGame()
+        Button3.Enabled = False
+        Button4.Enabled = False
+        Button5.Enabled = False
+        Button6.Enabled = False
+        Button7.Enabled = False
+        Button8.Enabled = False
+        Button9.Enabled = False
+        Button10.Enabled = False
+        Button11.Enabled = False
+        Button12.Enabled = False
+        Button13.Enabled = False
+        Button14.Enabled = False
+        Button15.Enabled = False
+        Button16.Enabled = False
+        Button17.Enabled = False
+        Button18.Enabled = False
+        Button19.Enabled = False
+        Button20.Enabled = False
+        Button21.Enabled = False
+        Button22.Enabled = False
+        Button23.Enabled = False
+        Button24.Enabled = False
+        Button25.Enabled = False
+        Button26.Enabled = False
+        Button27.Enabled = False
+        Button28.Enabled = False
+        Button29.Enabled = False
+        Button30.Enabled = False
+        Button31.Enabled = False
+        Button32.Enabled = False
+        Button33.Enabled = False
+        Button34.Enabled = False
+        Button35.Enabled = False
+        Button36.Enabled = False
+        Button37.Enabled = False
+        Button38.Enabled = False
+        Button39.Enabled = False
+        Button40.Enabled = False
+        Button41.Enabled = False
+        Button42.Enabled = False
+        Button43.Enabled = False
+        Button44.Enabled = False
+        Button45.Enabled = False
+        Button46.Enabled = False
+        Button47.Enabled = False
+        Button48.Enabled = False
+        Button49.Enabled = False
+        Button50.Enabled = False
+        Button51.Enabled = False
+        Button52.Enabled = False
+        Button53.Enabled = False
+        Button54.Enabled = False
+        Button55.Enabled = False
+        Button56.Enabled = False
+        Button57.Enabled = False
+        Button58.Enabled = False
+        Button59.Enabled = False
+        Button60.Enabled = False
+        Button61.Enabled = False
+        Button62.Enabled = False
+        Button63.Enabled = False
+        Button64.Enabled = False
+        Button65.Enabled = False
+        Button1.Enabled = True
+        Button2.Enabled = True
+        Player1Score = 0
+        Player2Score = 0
+        Player3Score = 0
+        Player4Score = 0
+        UpdateScore()
+        Player4Played = False
+        Player1Played = False
+        Player2Played = False
+        Player3Played = False
+        Player1Check = "False"
+        Player2Check = "False"
+        Player3Check = "False"
+        Player4Check = "False"
     End Sub
     'Skip Funktion
 
@@ -2364,5 +2468,9 @@
             Player4Played = True
             WurfcheckPlayer4()
         End If
+    End Sub
+
+    Private Sub Button66_Click(sender As System.Object, e As System.EventArgs) Handles Button66.Click
+        ResetGame()
     End Sub
 End Class
