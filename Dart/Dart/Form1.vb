@@ -67,13 +67,13 @@
         Button62.Enabled = False
         Button63.Enabled = False
         Button64.Enabled = False
-        Player1Name = Nothing
+        Player1Name = ""
         Player1Score = 0
-        Player2Name = Nothing
+        Player2Name = ""
         Player2Score = 0
-        Player3Name = Nothing
+        Player3Name = ""
         Player3Score = 0
-        Player4Name = Nothing
+        Player4Name = ""
         Player4Score = 0
         Player1Plays = "True"
         Player2Plays = "True"
@@ -265,6 +265,7 @@
                                 If Player4Plays = "True" Then
                                     If Player4Played = False Then
                                         PlayerFour()
+                                        Player3Played = False
                                     End If
                                 End If
                             End If
@@ -284,9 +285,9 @@
                     PlayerTwo()
                     Player1Played = False
                 End If
-        ElseIf Player2Plays = "False" Then
-            PlayerOne()
-            Player1Played = False
+            ElseIf Player1Played = True Then
+                PlayerTwo()
+                Player1Played = False
             End If
         End If
     End Sub
