@@ -95,6 +95,7 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button65 = New System.Windows.Forms.Button()
+        Me.Button66 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -821,11 +822,21 @@ Partial Class Form1
         Me.Button65.Text = "Skip"
         Me.Button65.UseVisualStyleBackColor = True
         '
+        'Button66
+        '
+        Me.Button66.Location = New System.Drawing.Point(594, 830)
+        Me.Button66.Name = "Button66"
+        Me.Button66.Size = New System.Drawing.Size(46, 23)
+        Me.Button66.TabIndex = 9
+        Me.Button66.Text = "Reset"
+        Me.Button66.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(652, 869)
+        Me.Controls.Add(Me.Button66)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TextBox4)
@@ -978,5 +989,6 @@ Partial Class Form1
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Button65 As System.Windows.Forms.Button
+    Friend WithEvents Button66 As System.Windows.Forms.Button
 
 End Class
