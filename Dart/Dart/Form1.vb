@@ -436,6 +436,409 @@
             WurfcheckPlayer4()
         End If
     End Sub
+    Private Sub Button10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button10.Click
+        If Player1Check = "True" Then
+            Player1Score = Player1Score - 8
+            Player1Check = "False"
+            UpdateScore()
+            Player1Played = True
+            WurfcheckPlayer1()
+
+        ElseIf Player2Check = "True" Then
+            Player2Score = Player2Score - 8
+            Player2Check = "False"
+            UpdateScore()
+            Player2Played = True
+            WurfcheckPlayer2()
+
+        ElseIf Player3Check = "True" Then
+
+            Player3Score = Player3Score - 8
+            Player3Check = "False"
+            UpdateScore()
+            Player3Played = True
+            WurfcheckPlayer3()
+
+        ElseIf Player4Check = "True" Then
+            Player4Score = Player4Score - 8
+            Player4Check = "False"
+            UpdateScore()
+            Player4Played = True
+            WurfcheckPlayer4()
+        End If
+    End Sub
+    Private Sub Button11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button11.Click
+        If Player1Check = "True" Then
+            Player1Score = Player1Score - 9
+            Player1Check = "False"
+            UpdateScore()
+            Player1Played = True
+            WurfcheckPlayer1()
+
+        ElseIf Player2Check = "True" Then
+            Player2Score = Player2Score - 9
+            Player2Check = "False"
+            UpdateScore()
+            Player2Played = True
+            WurfcheckPlayer2()
+
+        ElseIf Player3Check = "True" Then
+
+            Player3Score = Player3Score - 9
+            Player3Check = "False"
+            UpdateScore()
+            Player3Played = True
+            WurfcheckPlayer3()
+
+        ElseIf Player4Check = "True" Then
+            Player4Score = Player4Score - 9
+            Player4Check = "False"
+            UpdateScore()
+            Player4Played = True
+            WurfcheckPlayer4()
+        End If
+    End Sub
+    Private Sub Button12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button12.Click
+        If Player1Check = "True" Then
+            Player1Score = Player1Score - 10
+            Player1Check = "False"
+            UpdateScore()
+            Player1Played = True
+            WurfcheckPlayer1()
+
+        ElseIf Player2Check = "True" Then
+            Player2Score = Player2Score - 10
+            Player2Check = "False"
+            UpdateScore()
+            Player2Played = True
+            WurfcheckPlayer2()
+
+        ElseIf Player3Check = "True" Then
+
+            Player3Score = Player3Score - 10
+            Player3Check = "False"
+            UpdateScore()
+            Player3Played = True
+            WurfcheckPlayer3()
+
+        ElseIf Player4Check = "True" Then
+            Player4Score = Player4Score - 10
+            Player4Check = "False"
+            UpdateScore()
+            Player4Played = True
+            WurfcheckPlayer4()
+        End If
+    End Sub
+    Private Sub Button13_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button13.Click
+        If Player1Check = "True" Then
+            Player1Score = Player1Score - 11
+            Player1Check = "False"
+            UpdateScore()
+            Player1Played = True
+            WurfcheckPlayer1()
+
+        ElseIf Player2Check = "True" Then
+            Player2Score = Player2Score - 11
+            Player2Check = "False"
+            UpdateScore()
+            Player2Played = True
+            WurfcheckPlayer2()
+
+        ElseIf Player3Check = "True" Then
+
+            Player3Score = Player3Score - 11
+            Player3Check = "False"
+            UpdateScore()
+            Player3Played = True
+            WurfcheckPlayer3()
+
+        ElseIf Player4Check = "True" Then
+            Player4Score = Player4Score - 11
+            Player4Check = "False"
+            UpdateScore()
+            Player4Played = True
+            WurfcheckPlayer4()
+        End If
+    End Sub
+    Private Sub Button14_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button14.Click
+        If Player1Check = "True" Then
+            Player1Score = Player1Score - 12
+            Player1Check = "False"
+            UpdateScore()
+            Player1Played = True
+            WurfcheckPlayer1()
+
+        ElseIf Player2Check = "True" Then
+            Player2Score = Player2Score - 12
+            Player2Check = "False"
+            UpdateScore()
+            Player2Played = True
+            WurfcheckPlayer2()
+
+        ElseIf Player3Check = "True" Then
+
+            Player3Score = Player3Score - 12
+            Player3Check = "False"
+            UpdateScore()
+            Player3Played = True
+            WurfcheckPlayer3()
+
+        ElseIf Player4Check = "True" Then
+            Player4Score = Player4Score - 12
+            Player4Check = "False"
+            UpdateScore()
+            Player4Played = True
+            WurfcheckPlayer4()
+        End If
+    End Sub
+    Private Sub Button15_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button15.Click
+        If Player1Check = "True" Then
+            Player1Score = Player1Score - 13
+            Player1Check = "False"
+            UpdateScore()
+            Player1Played = True
+            WurfcheckPlayer1()
+
+        ElseIf Player2Check = "True" Then
+            Player2Score = Player2Score - 13
+            Player2Check = "False"
+            UpdateScore()
+            Player2Played = True
+            WurfcheckPlayer2()
+
+        ElseIf Player3Check = "True" Then
+
+            Player3Score = Player3Score - 13
+            Player3Check = "False"
+            UpdateScore()
+            Player3Played = True
+            WurfcheckPlayer3()
+
+        ElseIf Player4Check = "True" Then
+            Player4Score = Player4Score - 13
+            Player4Check = "False"
+            UpdateScore()
+            Player4Played = True
+            WurfcheckPlayer4()
+        End If
+    End Sub
+    Private Sub Button16_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button16.Click
+        If Player1Check = "True" Then
+            Player1Score = Player1Score - 14
+            Player1Check = "False"
+            UpdateScore()
+            Player1Played = True
+            WurfcheckPlayer1()
+
+        ElseIf Player2Check = "True" Then
+            Player2Score = Player2Score - 14
+            Player2Check = "False"
+            UpdateScore()
+            Player2Played = True
+            WurfcheckPlayer2()
+
+        ElseIf Player3Check = "True" Then
+
+            Player3Score = Player3Score - 14
+            Player3Check = "False"
+            UpdateScore()
+            Player3Played = True
+            WurfcheckPlayer3()
+
+        ElseIf Player4Check = "True" Then
+            Player4Score = Player4Score - 14
+            Player4Check = "False"
+            UpdateScore()
+            Player4Played = True
+            WurfcheckPlayer4()
+        End If
+    End Sub
+    Private Sub Button17_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button17.Click
+        If Player1Check = "True" Then
+            Player1Score = Player1Score - 15
+            Player1Check = "False"
+            UpdateScore()
+            Player1Played = True
+            WurfcheckPlayer1()
+
+        ElseIf Player2Check = "True" Then
+            Player2Score = Player2Score - 15
+            Player2Check = "False"
+            UpdateScore()
+            Player2Played = True
+            WurfcheckPlayer2()
+
+        ElseIf Player3Check = "True" Then
+
+            Player3Score = Player3Score - 15
+            Player3Check = "False"
+            UpdateScore()
+            Player3Played = True
+            WurfcheckPlayer3()
+
+        ElseIf Player4Check = "True" Then
+            Player4Score = Player4Score - 15
+            Player4Check = "False"
+            UpdateScore()
+            Player4Played = True
+            WurfcheckPlayer4()
+        End If
+    End Sub
+    Private Sub Button18_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button18.Click
+        If Player1Check = "True" Then
+            Player1Score = Player1Score - 16
+            Player1Check = "False"
+            UpdateScore()
+            Player1Played = True
+            WurfcheckPlayer1()
+
+        ElseIf Player2Check = "True" Then
+            Player2Score = Player2Score - 16
+            Player2Check = "False"
+            UpdateScore()
+            Player2Played = True
+            WurfcheckPlayer2()
+
+        ElseIf Player3Check = "True" Then
+
+            Player3Score = Player3Score - 16
+            Player3Check = "False"
+            UpdateScore()
+            Player3Played = True
+            WurfcheckPlayer3()
+
+        ElseIf Player4Check = "True" Then
+            Player4Score = Player4Score - 16
+            Player4Check = "False"
+            UpdateScore()
+            Player4Played = True
+            WurfcheckPlayer4()
+        End If
+    End Sub
+    Private Sub Button19_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button19.Click
+        If Player1Check = "True" Then
+            Player1Score = Player1Score - 17
+            Player1Check = "False"
+            UpdateScore()
+            Player1Played = True
+            WurfcheckPlayer1()
+
+        ElseIf Player2Check = "True" Then
+            Player2Score = Player2Score - 17
+            Player2Check = "False"
+            UpdateScore()
+            Player2Played = True
+            WurfcheckPlayer2()
+
+        ElseIf Player3Check = "True" Then
+
+            Player3Score = Player3Score - 17
+            Player3Check = "False"
+            UpdateScore()
+            Player3Played = True
+            WurfcheckPlayer3()
+
+        ElseIf Player4Check = "True" Then
+            Player4Score = Player4Score - 17
+            Player4Check = "False"
+            UpdateScore()
+            Player4Played = True
+            WurfcheckPlayer4()
+        End If
+    End Sub
+    Private Sub Button20_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button20.Click
+        If Player1Check = "True" Then
+            Player1Score = Player1Score - 18
+            Player1Check = "False"
+            UpdateScore()
+            Player1Played = True
+            WurfcheckPlayer1()
+
+        ElseIf Player2Check = "True" Then
+            Player2Score = Player2Score - 18
+            Player2Check = "False"
+            UpdateScore()
+            Player2Played = True
+            WurfcheckPlayer2()
+
+        ElseIf Player3Check = "True" Then
+
+            Player3Score = Player3Score - 18
+            Player3Check = "False"
+            UpdateScore()
+            Player3Played = True
+            WurfcheckPlayer3()
+
+        ElseIf Player4Check = "True" Then
+            Player4Score = Player4Score - 18
+            Player4Check = "False"
+            UpdateScore()
+            Player4Played = True
+            WurfcheckPlayer4()
+        End If
+    End Sub
+    Private Sub Button21_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button21.Click
+        If Player1Check = "True" Then
+            Player1Score = Player1Score - 19
+            Player1Check = "False"
+            UpdateScore()
+            Player1Played = True
+            WurfcheckPlayer1()
+
+        ElseIf Player2Check = "True" Then
+            Player2Score = Player2Score - 19
+            Player2Check = "False"
+            UpdateScore()
+            Player2Played = True
+            WurfcheckPlayer2()
+
+        ElseIf Player3Check = "True" Then
+
+            Player3Score = Player3Score - 19
+            Player3Check = "False"
+            UpdateScore()
+            Player3Played = True
+            WurfcheckPlayer3()
+
+        ElseIf Player4Check = "True" Then
+            Player4Score = Player4Score - 19
+            Player4Check = "False"
+            UpdateScore()
+            Player4Played = True
+            WurfcheckPlayer4()
+        End If
+    End Sub
+    Private Sub Button22_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button22.Click
+        If Player1Check = "True" Then
+            Player1Score = Player1Score - 20
+            Player1Check = "False"
+            UpdateScore()
+            Player1Played = True
+            WurfcheckPlayer1()
+
+        ElseIf Player2Check = "True" Then
+            Player2Score = Player2Score - 20
+            Player2Check = "False"
+            UpdateScore()
+            Player2Played = True
+            WurfcheckPlayer2()
+
+        ElseIf Player3Check = "True" Then
+
+            Player3Score = Player3Score - 20
+            Player3Check = "False"
+            UpdateScore()
+            Player3Played = True
+            WurfcheckPlayer3()
+
+        ElseIf Player4Check = "True" Then
+            Player4Score = Player4Score - 20
+            Player4Check = "False"
+            UpdateScore()
+            Player4Played = True
+            WurfcheckPlayer4()
+        End If
+    End Sub
     Sub CheckNextPlayer()
         If Player1Plays = "True" Then
             If Player1Played = False Then
