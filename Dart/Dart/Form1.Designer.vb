@@ -94,6 +94,7 @@ Partial Class Form1
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Button65 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -810,6 +811,16 @@ Partial Class Form1
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "Würfe: Anzahl"
         '
+        'Button65
+        '
+        Me.Button65.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button65.Location = New System.Drawing.Point(490, 406)
+        Me.Button65.Name = "Button65"
+        Me.Button65.Size = New System.Drawing.Size(100, 33)
+        Me.Button65.TabIndex = 5
+        Me.Button65.Text = "Skip"
+        Me.Button65.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -822,6 +833,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button64)
+        Me.Controls.Add(Me.Button65)
         Me.Controls.Add(Me.Button63)
         Me.Controls.Add(Me.Button62)
         Me.Controls.Add(Me.Button42)
@@ -965,5 +977,6 @@ Partial Class Form1
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Button65 As System.Windows.Forms.Button
 
 End Class

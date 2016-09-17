@@ -67,6 +67,7 @@
         Button62.Enabled = False
         Button63.Enabled = False
         Button64.Enabled = False
+        Button65.Enabled = False
         Player1Name = ""
         Player1Score = 0
         Player2Name = ""
@@ -176,6 +177,7 @@
         Button62.Enabled = True
         Button63.Enabled = True
         Button64.Enabled = True
+        Button65.Enabled = True
         TotalScore = 301
         Player1Score = TotalScore
         Player2Score = TotalScore
@@ -839,6 +841,7 @@
             WurfcheckPlayer4()
         End If
     End Sub
+
     Sub CheckNextPlayer()
         If Player1Plays = "True" Then
             If Player1Played = False Then
@@ -882,7 +885,7 @@
                         End If
                         End If
                 ElseIf Player1Played = True Then
-                    PlayerTwo()
+                    PlayerOne()
                     Player1Played = False
                 End If
             ElseIf Player1Played = True Then
@@ -950,5 +953,25 @@
         Label4.Text = "Würfe: " + Player3Wuerfe
         Player4Check = "False"
         CheckNextPlayer()
+    End Sub
+
+    Private Sub Button65_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button65.Click
+        If Player1Check = "True" Then
+            Player1Check = "False"
+            Player1Played = True
+            WurfcheckPlayer1()
+        ElseIf Player2Check = "True" Then
+            Player2Check = "False"
+            Player2Played = True
+            WurfcheckPlayer2()
+        ElseIf Player3Check = "True" Then
+            Player3Check = "False"
+            Player3Played = True
+            WurfcheckPlayer3()
+        ElseIf Player4Check = "True" Then
+            Player4Check = "False"
+            Player4Played = True
+            WurfcheckPlayer4()
+        End If
     End Sub
 End Class
