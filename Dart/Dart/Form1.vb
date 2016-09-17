@@ -286,9 +286,16 @@
                     Player1Played = False
                 End If
             ElseIf Player1Played = True Then
-                PlayerTwo()
+                If Player2Plays = "True" Then
+                    PlayerTwo()
+                    Player1Played = False
+
+            Else
+                PlayerOne()
                 Player1Played = False
             End If
+            End If
         End If
+
     End Sub
 End Class
