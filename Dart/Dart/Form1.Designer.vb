@@ -93,6 +93,7 @@ Partial Class Form1
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -756,7 +757,7 @@ Partial Class Form1
         'TextBox1
         '
         Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(490, 482)
+        Me.TextBox1.Location = New System.Drawing.Point(488, 485)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 6
@@ -799,11 +800,22 @@ Partial Class Form1
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "PlayerName ist dran!"
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(485, 608)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(100, 18)
+        Me.Label4.TabIndex = 8
+        Me.Label4.Text = "Würfe: Anzahl"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(647, 874)
+        Me.ClientSize = New System.Drawing.Size(652, 741)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TextBox3)
@@ -952,5 +964,6 @@ Partial Class Form1
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 
 End Class
