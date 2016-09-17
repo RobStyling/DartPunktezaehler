@@ -28,3 +28,9 @@ C:\Users\Admin\Desktop\Github\DartPunktezaehler\Dart\Dart\obj\x86\Debug\Dart.vbp
 C:\Users\Robin\Desktop\Dart\DartPunktezaehler\Dart\Dart\obj\x86\Debug\Dart.exe
 C:\Users\Robin\Desktop\Dart\DartPunktezaehler\Dart\Dart\obj\x86\Debug\Dart.xml
 C:\Users\Robin\Desktop\Dart\DartPunktezaehler\Dart\Dart\obj\x86\Debug\Dart.pdb
+C:\Users\Robin\Desktop\Dart\DartPunktezaehler\Dart\Dart\bin\Debug\Dart.exe
+C:\Users\Robin\Desktop\Dart\DartPunktezaehler\Dart\Dart\bin\Debug\Dart.pdb
+C:\Users\Robin\Desktop\Dart\DartPunktezaehler\Dart\Dart\bin\Debug\Dart.xml
+C:\Users\Robin\Desktop\Dart\DartPunktezaehler\Dart\Dart\obj\x86\Debug\Dart.Form1.resources
+C:\Users\Robin\Desktop\Dart\DartPunktezaehler\Dart\Dart\obj\x86\Debug\Dart.Resources.resources
+C:\Users\Robin\Desktop\Dart\DartPunktezaehler\Dart\Dart\obj\x86\Debug\Dart.vbproj.GenerateResource.Cache
