@@ -1,10 +1,12 @@
 ﻿Public Class Form1
+    'Variabelen
     Dim Player1Name, Player1Score, Player1Check, Player1Plays, Player2Name, Player2Score, Player2Check, Player2Plays, Player3Name, Player3Score, Player3Check, Player3Plays, Player4Name, Player4Score, Player4Check, Player4Plays, TotalScore As String
     Dim Player1Played, Player2Played, Player3Played, Player4Played As Boolean
     Dim Player1Wuerfe, Player2Wuerfe, Player3Wuerfe, Player4Wuerfe As String
 
 
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        'Buttons deaktivieren
         Button3.Enabled = False
         Button4.Enabled = False
         Button5.Enabled = False
@@ -68,6 +70,7 @@
         Button63.Enabled = False
         Button64.Enabled = False
         Button65.Enabled = False
+        'All Variabelen setzen
         Player1Name = ""
         Player1Score = 0
         Player2Name = ""
@@ -80,11 +83,12 @@
         Player2Plays = "True"
         Player3Plays = "True"
         Player4Plays = "True"
+        'Inputbox vorbereiten
         Dim message, title, defaultValue As String
         message = "Gebe einen Spieler Namen ein"
         title = "Spielernamen Eingabe"
         defaultValue = ""
-
+        'Inputboxen
         Player1Name = InputBox(message, title, defaultValue, 100, 100)
         If Player1Name Is "" Then
             Player1Name = defaultValue
@@ -112,6 +116,7 @@
         UpdateScore()
     End Sub
 
+    'Startet Spiel 301
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         Button1.Enabled = False
         Button2.Enabled = False
@@ -186,12 +191,91 @@
         UpdateScore()
         PlayerOne()
     End Sub
+    'Startet Spiel 501
+    Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
+        Button1.Enabled = False
+        Button2.Enabled = False
+        Button3.Enabled = True
+        Button4.Enabled = True
+        Button5.Enabled = True
+        Button6.Enabled = True
+        Button7.Enabled = True
+        Button8.Enabled = True
+        Button9.Enabled = True
+        Button10.Enabled = True
+        Button11.Enabled = True
+        Button12.Enabled = True
+        Button13.Enabled = True
+        Button14.Enabled = True
+        Button15.Enabled = True
+        Button16.Enabled = True
+        Button17.Enabled = True
+        Button18.Enabled = True
+        Button19.Enabled = True
+        Button20.Enabled = True
+        Button21.Enabled = True
+        Button22.Enabled = True
+        Button23.Enabled = True
+        Button24.Enabled = True
+        Button25.Enabled = True
+        Button26.Enabled = True
+        Button27.Enabled = True
+        Button28.Enabled = True
+        Button29.Enabled = True
+        Button30.Enabled = True
+        Button31.Enabled = True
+        Button32.Enabled = True
+        Button33.Enabled = True
+        Button34.Enabled = True
+        Button35.Enabled = True
+        Button36.Enabled = True
+        Button37.Enabled = True
+        Button38.Enabled = True
+        Button39.Enabled = True
+        Button40.Enabled = True
+        Button41.Enabled = True
+        Button42.Enabled = True
+        Button43.Enabled = True
+        Button44.Enabled = True
+        Button45.Enabled = True
+        Button46.Enabled = True
+        Button47.Enabled = True
+        Button48.Enabled = True
+        Button49.Enabled = True
+        Button50.Enabled = True
+        Button51.Enabled = True
+        Button52.Enabled = True
+        Button53.Enabled = True
+        Button54.Enabled = True
+        Button55.Enabled = True
+        Button56.Enabled = True
+        Button57.Enabled = True
+        Button58.Enabled = True
+        Button59.Enabled = True
+        Button60.Enabled = True
+        Button61.Enabled = True
+        Button62.Enabled = True
+        Button63.Enabled = True
+        Button64.Enabled = True
+        Button65.Enabled = True
+        TotalScore = 501
+        Player1Score = TotalScore
+        Player2Score = TotalScore
+        Player3Score = TotalScore
+        Player4Score = TotalScore
+        UpdateScore()
+        PlayerOne()
+    End Sub
+    'Updated den Score
+
     Sub UpdateScore()
         TextBox1.Text = "Score " + Player1Name + " " + Player1Score
         TextBox2.Text = "Score " + Player2Name + " " + Player2Score
         TextBox3.Text = "Score " + Player3Name + " " + Player3Score
         TextBox4.Text = "Score " + Player4Name + " " + Player4Score
     End Sub
+    'Spieler Handler
+
     Sub PlayerOne()
         Label3.Text = Player1Name + " ist dran!"
         MessageBox.Show(Player1Name + " ist dran!")
@@ -220,7 +304,7 @@
         Player4Wuerfe = 3
         Label4.Text = "Würfe: " + Player4Wuerfe
     End Sub
-
+    'Ersten zwanzig Buttons
     Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click
         If Player1Check = "True" Then
             Player1Score = Player1Score - 1
@@ -239,9 +323,9 @@
         ElseIf Player3Check = "True" Then
 
             Player3Score = Player3Score - 1
-        Player3Check = "False"
-        UpdateScore()
-        Player3Played = True
+            Player3Check = "False"
+            UpdateScore()
+            Player3Played = True
             WurfcheckPlayer3()
 
         ElseIf Player4Check = "True" Then
@@ -841,6 +925,7 @@
             WurfcheckPlayer4()
         End If
     End Sub
+    'Next Player Check
 
     Sub CheckNextPlayer()
         If Player1Plays = "True" Then
@@ -883,7 +968,7 @@
                             PlayerOne()
                             Player2Played = False
                         End If
-                        End If
+                    End If
                 ElseIf Player1Played = True Then
                     PlayerOne()
                     Player1Played = False
@@ -893,14 +978,15 @@
                     PlayerTwo()
                     Player1Played = False
 
-            Else
-                PlayerOne()
-                Player1Played = False
-            End If
+                Else
+                    PlayerOne()
+                    Player1Played = False
+                End If
             End If
         End If
 
     End Sub
+    'Wurfchecks
     Sub WurfcheckPlayer1()
         Do
             Player1Wuerfe = Player1Wuerfe - 1
@@ -954,6 +1040,7 @@
         Player4Check = "False"
         CheckNextPlayer()
     End Sub
+    'Skip Funktion
 
     Private Sub Button65_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button65.Click
         If Player1Check = "True" Then
@@ -2210,6 +2297,68 @@
 
         ElseIf Player4Check = "True" Then
             Player4Score = Player4Score - 20 * 3
+            Player4Check = "False"
+            UpdateScore()
+            Player4Played = True
+            WurfcheckPlayer4()
+        End If
+    End Sub
+    Private Sub Button63_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button63.Click
+        If Player1Check = "True" Then
+            Player1Score = Player1Score - 25
+            Player1Check = "False"
+            UpdateScore()
+            Player1Played = True
+            WurfcheckPlayer1()
+
+        ElseIf Player2Check = "True" Then
+            Player2Score = Player2Score - 25
+            Player2Check = "False"
+            UpdateScore()
+            Player2Played = True
+            WurfcheckPlayer2()
+
+        ElseIf Player3Check = "True" Then
+
+            Player3Score = Player3Score - 25
+            Player3Check = "False"
+            UpdateScore()
+            Player3Played = True
+            WurfcheckPlayer3()
+
+        ElseIf Player4Check = "True" Then
+            Player4Score = Player4Score - 25
+            Player4Check = "False"
+            UpdateScore()
+            Player4Played = True
+            WurfcheckPlayer4()
+        End If
+    End Sub
+    Private Sub Button64_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button64.Click
+        If Player1Check = "True" Then
+            Player1Score = Player1Score - 50
+            Player1Check = "False"
+            UpdateScore()
+            Player1Played = True
+            WurfcheckPlayer1()
+
+        ElseIf Player2Check = "True" Then
+            Player2Score = Player2Score - 50
+            Player2Check = "False"
+            UpdateScore()
+            Player2Played = True
+            WurfcheckPlayer2()
+
+        ElseIf Player3Check = "True" Then
+
+            Player3Score = Player3Score - 50
+            Player3Check = "False"
+            UpdateScore()
+            Player3Played = True
+            WurfcheckPlayer3()
+
+        ElseIf Player4Check = "True" Then
+            Player4Score = Player4Score - 50
             Player4Check = "False"
             UpdateScore()
             Player4Played = True
