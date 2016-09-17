@@ -212,6 +212,7 @@
         Label3.Text = Player4Name + " ist dran!"
         MessageBox.Show(Player4Name + " ist dran!")
         Player4Check = "True"
+        Player4Wuerfe = 3
     End Sub
 
     Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click
@@ -231,7 +232,7 @@
 
         ElseIf Player3Check = "True" Then
 
-            Player3Score = Player4Score - 1
+            Player3Score = Player3Score - 1
         Player3Check = "False"
         UpdateScore()
         Player3Played = True
@@ -267,6 +268,9 @@
                                         PlayerFour()
                                         Player3Played = False
                                     End If
+                                ElseIf Player4Plays = "False" Then
+                                    PlayerOne()
+                                    Player3Played = False
                                 End If
                             End If
                         ElseIf Player3Plays = "False" Then
@@ -279,6 +283,9 @@
                                 PlayerThree()
                                 Player2Played = False
                             End If
+                        ElseIf Player3Plays = "False" Then
+                            PlayerOne()
+                            Player2Played = False
                         End If
                         End If
                 ElseIf Player1Played = True Then
